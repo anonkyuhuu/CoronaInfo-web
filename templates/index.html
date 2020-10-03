@@ -39,10 +39,10 @@
               <h6 class="text-primary">About</h6>
               <hr>
               <p>This website is useful for viewing the status of corona in Indonesia and globally, made with the Flask and Bootstrap4 Framework, assisted by the API from the Kawalcorona web.</p>
-              <i class="fa-2x fab fa-github text-dark mr-1"><a href="https://github.com/anonkyuhuu"></i></a>
-              <i class="fa-2x fab fa-facebook text-dark mr-1"><a href="https://github.com/anonkyuhuu"></i></a>
-              <i class="fa-2x fab fa-instagram text-dark mr-1"><a href="https://github.com/anonkyuhuu"></i></a>
-              <i class="fa-2x fab fa-telegram text-dark mr-1"><a href="https://github.com/anonkyuhuu"></i></a>
+              <a href="https://github.com/anonkyuhuu"><i class="fa-2x fab fa-github text-dark mr-1"></i></a>
+              <a href="https://facebook.com/anonktantod"><i class="fa-2x fab fa-facebook text-dark mr-1"></i></a>
+              <a href="https://instagram.com/anonkyuhuu_"><i class="fa-2x fab fa-instagram text-dark mr-1"></i></a>
+              <a href="https://t.me/anonkyuhuu"><i class="fa-2x fab fa-telegram text-dark mr-1"></i></a>
             </div>
           </div>
         </div>
@@ -63,8 +63,8 @@
                   </tr>
                   {% for id, data in values %}
                   <tr>
-                    <td>{{id + 1}}</td>
-                    <td><a href="/global/{{data.country}}">{{data.country}}</td>
+                    <td>{{id + 1 }}</td>
+                    <td><a href="/global/{{data.country}}">{{data.country}}</a></td>
                     <td>{{data.confirmed}}</td>
                     <td>{{data.active}}</td>
                     <td>{{data.recovered}}</td>
